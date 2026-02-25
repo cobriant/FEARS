@@ -3,6 +3,7 @@ google trends for terms like "gold prices", "recession", "crisis", "unemployment
 
 R code:
 
+```{}
 anchored_daily_gtrends_2004_2011 <- function(keyword,
                                              anchor = "weather",
                                              geo = "US",
@@ -244,3 +245,4 @@ log <- run_all_terms(terms, out_dir = "gtrends_csv", anchor = "weather")
 
 # See any failures
 log %>% filter(status != "ok")
+```
